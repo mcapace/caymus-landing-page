@@ -46,7 +46,7 @@ a:focus-visible {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #2a1e1a url("../images/Caymus-BG Image.jpg") no-repeat 12% 38%;
+  background: #2a1e1a url("../images/Caymus-BG Image.jpg") no-repeat 85% 38%;
   background-size: 105%;
   background-attachment: scroll;
   overflow: hidden;
@@ -250,7 +250,7 @@ a:focus-visible {
 
 @media (max-width: 900px) {
   .caymus-landing {
-    background-position: 10% 36%;
+    background-position: 82% 36%;
     background-size: 115%;
   }
 }
