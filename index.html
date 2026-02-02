@@ -161,5 +161,16 @@
     </div>
   </footer>
 
+  <script>
+    (function () {
+      var bg = document.querySelector('.caymus-bg-video');
+      if (bg) {
+        bg.addEventListener('ended', function () {
+          bg.currentTime = 0;
+          bg.play();
+        });
+      }
+    })();
+  </script>
 </body>
 </html>

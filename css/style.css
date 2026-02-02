@@ -202,6 +202,9 @@ a:focus-visible {
   height: 100%;
   object-fit: cover;
   display: block;
+  /* Slight zoom out so more of the frame (e.g. wine pour) is visible */
+  transform: scale(0.88);
+  transform-origin: center center;
 }
 
 @media (prefers-reduced-motion: reduce) {
