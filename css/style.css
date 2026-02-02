@@ -201,10 +201,8 @@ a:focus-visible {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 42%;
   display: block;
-  /* Slight zoom out so more of the frame (e.g. wine pour) is visible */
-  transform: scale(0.88);
-  transform-origin: center center;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -362,7 +360,7 @@ a:focus-visible {
 .caymus-point h2 {
   font-family: 'abril-titling', Georgia, serif;
   font-size: 1.0625rem;
-  font-weight: 600;
+  font-weight: 500;
   color: #f8f4ed;
   margin: 0 0 0.4rem;
   line-height: 1.35;
@@ -370,7 +368,7 @@ a:focus-visible {
 }
 
 .caymus-point h2 strong {
-  font-weight: 700;
+  font-weight: 600;
   color: #f8f4ed;
 }
 
