@@ -46,7 +46,10 @@ a:focus-visible {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #2a1e1a url("../images/Caymus-BG Image.jpg") no-repeat right 38%;
+  background-color: #2a1e1a;
+  background-image: url("../images/Caymus-BG Image.jpg");
+  background-repeat: no-repeat;
+  background-position: right 38%;
   background-size: 105%;
   background-attachment: scroll;
   overflow: hidden;
@@ -58,11 +61,18 @@ a:focus-visible {
   }
 }
 
-/* No dark overlay — match mock: natural background, no darkening filter */
+/* Seamless gradient: matches BG color on left, fades to transparent so glass on right is clear */
 .caymus-overlay {
   position: absolute;
   inset: 0;
-  background: none;
+  background: linear-gradient(
+    to right,
+    #2a1e1a 0%,
+    #2a1e1a 12%,
+    rgba(42, 30, 26, 0.92) 28%,
+    rgba(42, 30, 26, 0.5) 48%,
+    transparent 62%
+  );
   z-index: 0;
 }
 
