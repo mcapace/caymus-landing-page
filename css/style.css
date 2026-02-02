@@ -180,19 +180,33 @@ a:focus-visible {
 }
 
 /* ============================================
-   Caymus Landing Section — Full-bleed BG image, text overlaid
+   Caymus Landing Section — Video background, text overlaid
    ============================================ */
 .caymus-landing {
   position: relative;
   min-height: calc(100vh - 120px);
   background: #2a1e1a url("../images/Caymus-BG Image.jpg") no-repeat center center;
   background-size: cover;
-  background-attachment: scroll;
+  overflow: hidden;
 }
 
-@media (min-width: 900px) {
-  .caymus-landing {
-    background-attachment: fixed;
+/* Video background: full-bleed, behind overlay and content */
+.caymus-video-wrap {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.caymus-bg-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .caymus-bg-video {
+    display: none;
   }
 }
 
