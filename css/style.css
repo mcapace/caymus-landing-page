@@ -119,11 +119,11 @@ a:focus-visible {
   width: auto;
 }
 
-/* Title wrap: left-aligned so in line with N in No. */
+/* Title wrap: centered with logo */
 .caymus-branding .caymus-title-wrap {
-  text-align: left;
-  max-width: 38em;
-  margin-left: 0;
+  text-align: center;
+  max-width: 42em;
+  margin-left: auto;
   margin-right: auto;
 }
 
@@ -141,7 +141,7 @@ a:focus-visible {
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35), 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-/* Subtitle: larger */
+/* Subtitle: one line, centered with logo */
 .caymus-tagline {
   font-family: 'atf-franklin-gothic', -apple-system, sans-serif;
   font-size: 1.125rem;
@@ -149,11 +149,12 @@ a:focus-visible {
   color: #f5f0e6;
   margin: 0;
   line-height: 1.5;
+  white-space: nowrap;
 }
 
 .caymus-points {
   max-width: 38em;
-  margin-left: 0;
+  margin-left: auto;
   margin-right: auto;
   margin-top: 0.5rem;
 }
@@ -248,7 +249,8 @@ a:focus-visible {
     background-position: center center;
     background-size: cover;
   }
-  .caymus-title {
+  .caymus-title,
+  .caymus-tagline {
     white-space: normal;
   }
 }
