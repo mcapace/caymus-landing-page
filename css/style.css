@@ -127,10 +127,10 @@ a:focus-visible {
   margin-right: auto;
 }
 
-/* Main title: larger, fits on one line where possible */
+/* Main title: sized so line length matches tagline below */
 .caymus-title {
   font-family: 'abril-titling', Georgia, serif;
-  font-size: clamp(1.9rem, 4.2vw, 2.6rem);
+  font-size: clamp(2.2rem, 5.2vw, 3.4rem);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.03em;
