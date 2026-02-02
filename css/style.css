@@ -54,7 +54,7 @@ a {
   padding: 0.75rem 1.5rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .ws-logo img {
@@ -195,76 +195,76 @@ a {
 .caymus-content {
   position: relative;
   z-index: 1;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 2.75rem 2.5rem 4rem;
+  padding: 3rem 2.5rem 4rem;
   overflow-y: auto;
 }
 
 .caymus-branding {
   text-align: center;
-  margin-bottom: 2.25rem;
+  margin-bottom: 2.5rem;
 }
 
-/* Logo: slightly larger */
+/* Caymus logo: larger */
 .caymus-branding .caymus-logo {
-  margin: 0 auto 1.5rem;
-  max-height: 140px;
+  margin: 0 auto 1.75rem;
+  max-height: 200px;
   width: auto;
 }
 
-/* Title wrap: left-aligned below logo */
+/* Title wrap: left-aligned, room for headline on one line */
 .caymus-branding .caymus-title-wrap {
   text-align: left;
-  max-width: 30em;
+  max-width: 42em;
   margin-left: 0;
   margin-right: auto;
 }
 
-/* Main title: Abril Titling (header font) */
+/* Main title: larger, fits on one line where possible */
 .caymus-title {
   font-family: 'abril-titling', Georgia, serif;
-  font-size: clamp(1.65rem, 3.8vw, 2.15rem);
+  font-size: clamp(1.9rem, 4.2vw, 2.6rem);
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
   color: #f8f4ed;
-  margin: 0 0 0.5rem;
-  line-height: 1.2;
+  margin: 0 0 0.6rem;
+  line-height: 1.15;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
 }
 
-/* Subtitle: ATF Franklin Gothic (body font) */
+/* Subtitle: larger */
 .caymus-tagline {
   font-family: 'atf-franklin-gothic', -apple-system, sans-serif;
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: 400;
   color: #f5f0e6;
   margin: 0;
-  line-height: 1.45;
+  line-height: 1.5;
 }
 
 .caymus-points {
-  max-width: 34em;
+  max-width: 38em;
   margin: 0;
-  margin-top: 0.25rem;
+  margin-top: 0.5rem;
 }
 
 .caymus-point {
-  margin-bottom: 2rem;
+  margin-bottom: 2.25rem;
 }
 
 .caymus-point:last-child {
   margin-bottom: 0;
 }
 
-/* Principle titles: Abril Titling (header font) */
+/* Principle titles: larger */
 .caymus-point h2 {
   font-family: 'abril-titling', Georgia, serif;
-  font-size: 0.9375rem;
+  font-size: 1.0625rem;
   font-weight: 600;
   color: #f8f4ed;
-  margin: 0 0 0.35rem;
+  margin: 0 0 0.4rem;
   line-height: 1.35;
   letter-spacing: 0.01em;
 }
@@ -274,10 +274,10 @@ a {
   color: #f8f4ed;
 }
 
-/* Quotes: ATF Franklin Gothic (body font) */
+/* Quotes: larger */
 .caymus-point blockquote {
   font-family: 'atf-franklin-gothic', -apple-system, sans-serif;
-  font-size: 0.9375rem;
+  font-size: 1.0625rem;
   font-weight: 400;
   color: #d4a84b;
   margin: 0;
