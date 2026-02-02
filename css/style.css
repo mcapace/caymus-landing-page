@@ -342,23 +342,45 @@ a:focus-visible {
 }
 
 .caymus-point {
+  position: relative;
   margin-bottom: 2.25rem;
-  padding-left: 1rem;
-  border-left: 3px solid rgba(212, 168, 75, 0.35);
+  padding-left: 1.25rem;
   opacity: 0;
-  transform: translateY(14px);
-  transition: opacity 0.5s ease-out, transform 0.45s ease-out, border-color 0.25s ease, padding-left 0.25s ease;
+  transform: translateY(18px);
+  filter: blur(6px);
+  transition: opacity 0.55s ease-out, transform 0.5s cubic-bezier(0.22, 1, 0.36, 1), filter 0.5s ease-out, padding-left 0.25s ease;
+}
+
+/* Animated left bar: "draws" down when point enters view */
+.caymus-point::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3px;
+  height: 0;
+  background: rgba(212, 168, 75, 0.35);
+  transition: height 0.5s cubic-bezier(0.22, 1, 0.36, 1), background 0.25s ease, width 0.25s ease;
 }
 
 .caymus-point.is-visible {
   opacity: 1;
   transform: translateY(0);
+  filter: blur(0);
+}
+
+.caymus-point.is-visible::before {
+  height: 100%;
 }
 
 .caymus-point:hover {
-  border-left-color: rgba(212, 168, 75, 0.65);
-  padding-left: 1.25rem;
+  padding-left: 1.5rem;
   transform: translateY(-2px);
+}
+
+.caymus-point:hover::before {
+  background: rgba(212, 168, 75, 0.65);
+  width: 4px;
 }
 
 .caymus-point.is-visible:hover {
@@ -369,8 +391,36 @@ a:focus-visible {
   margin-bottom: 0;
 }
 
+/* Inner cascade: title first, then quote */
+.caymus-point h2 {
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.4s ease-out 0.08s, transform 0.4s cubic-bezier(0.22, 1, 0.36, 1) 0.08s;
+}
+
+.caymus-point blockquote {
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.45s ease-out 0.2s, transform 0.4s cubic-bezier(0.22, 1, 0.36, 1) 0.2s, color 0.25s ease;
+}
+
+.caymus-point.is-visible h2,
+.caymus-point.is-visible blockquote {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .caymus-point {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+  .caymus-point::before {
+    height: 100%;
+  }
+  .caymus-point h2,
+  .caymus-point blockquote {
     opacity: 1;
     transform: none;
   }
@@ -395,7 +445,7 @@ a:focus-visible {
   color: #f8f4ed;
 }
 
-/* Quotes: larger, subtle transition on hover */
+/* Quotes: larger, subtle transition on hover (transition kept for cascade + color) */
 .caymus-point blockquote {
   font-family: 'atf-franklin-gothic', -apple-system, sans-serif;
   font-size: 1.0625rem;
@@ -406,7 +456,6 @@ a:focus-visible {
   border: none;
   line-height: 1.55;
   font-style: normal;
-  transition: color 0.25s ease;
 }
 
 .caymus-point:hover blockquote {
