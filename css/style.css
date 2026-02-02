@@ -153,33 +153,16 @@ a:focus-visible {
 .caymus-point {
   position: relative;
   margin-bottom: 2.25rem;
-  padding-left: 1.25rem;
   opacity: 0;
   transform: translateY(18px);
   filter: blur(6px);
   transition: opacity 0.55s ease-out, transform 0.5s cubic-bezier(0.22, 1, 0.36, 1), filter 0.5s ease-out;
 }
 
-/* Animated left bar: "draws" down when point enters view */
-.caymus-point::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 3px;
-  height: 0;
-  background: rgba(212, 168, 75, 0.35);
-  transition: height 0.5s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
 .caymus-point.is-visible {
   opacity: 1;
   transform: translateY(0);
   filter: blur(0);
-}
-
-.caymus-point.is-visible::before {
-  height: 100%;
 }
 
 .caymus-point:last-child {
@@ -210,9 +193,6 @@ a:focus-visible {
     opacity: 1;
     transform: none;
     filter: none;
-  }
-  .caymus-point::before {
-    height: 100%;
   }
   .caymus-point h2,
   .caymus-point blockquote {
