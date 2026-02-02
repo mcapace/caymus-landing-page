@@ -221,9 +221,9 @@ a {
   margin-right: auto;
 }
 
-/* Main title: sans-serif, bold, uppercase, light cream — mockup */
+/* Main title: Abril Titling (header font) */
 .caymus-title {
-  font-family: 'Source Sans 3', -apple-system, sans-serif;
+  font-family: 'abril-titling', Georgia, serif;
   font-size: clamp(1.65rem, 3.8vw, 2.15rem);
   font-weight: 700;
   text-transform: uppercase;
@@ -234,9 +234,9 @@ a {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
 }
 
-/* Subtitle: lighter sans-serif, cream, tighter below title — mockup */
+/* Subtitle: ATF Franklin Gothic (body font) */
 .caymus-tagline {
-  font-family: 'Source Sans 3', -apple-system, sans-serif;
+  font-family: 'atf-franklin-gothic', -apple-system, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   color: #f5f0e6;
@@ -258,9 +258,9 @@ a {
   margin-bottom: 0;
 }
 
-/* Principle titles: sans-serif, medium-bold, cream — mockup */
+/* Principle titles: Abril Titling (header font) */
 .caymus-point h2 {
-  font-family: 'Source Sans 3', -apple-system, sans-serif;
+  font-family: 'abril-titling', Georgia, serif;
   font-size: 0.9375rem;
   font-weight: 600;
   color: #f8f4ed;
@@ -274,9 +274,9 @@ a {
   color: #f8f4ed;
 }
 
-/* Quotes: sans-serif, regular, warm goldenrod — mockup */
+/* Quotes: ATF Franklin Gothic (body font) */
 .caymus-point blockquote {
-  font-family: 'Source Sans 3', -apple-system, sans-serif;
+  font-family: 'atf-franklin-gothic', -apple-system, sans-serif;
   font-size: 0.9375rem;
   font-weight: 400;
   color: #d4a84b;
