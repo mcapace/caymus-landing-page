@@ -58,11 +58,17 @@ a:focus-visible {
   }
 }
 
-/* No overlay — use the full 16:9 image as supplied */
+/* Gradient on left to match right: soften purple, blend to same tone as right */
 .caymus-overlay {
   position: absolute;
   inset: 0;
-  background: none;
+  background: linear-gradient(
+    to right,
+    rgba(38, 28, 32, 0.55) 0%,
+    rgba(42, 30, 34, 0.35) 25%,
+    rgba(44, 32, 36, 0.12) 45%,
+    transparent 58%
+  );
   z-index: 0;
 }
 
