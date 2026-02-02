@@ -58,18 +58,11 @@ a:focus-visible {
   }
 }
 
-/* Seamless gradient: matches BG color on left, fades to transparent so glass on right is clear */
+/* No overlay — use the full 16:9 image as supplied */
 .caymus-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to right,
-    #2a1e1a 0%,
-    #2a1e1a 12%,
-    rgba(42, 30, 26, 0.92) 28%,
-    rgba(42, 30, 26, 0.5) 48%,
-    transparent 62%
-  );
+  background: none;
   z-index: 0;
 }
 
@@ -113,11 +106,11 @@ a:focus-visible {
   width: auto;
 }
 
-/* Title wrap: left-aligned, room for headline on one line */
+/* Title wrap: centered with logo */
 .caymus-branding .caymus-title-wrap {
-  text-align: left;
+  text-align: center;
   max-width: 42em;
-  margin-left: 0;
+  margin-left: auto;
   margin-right: auto;
 }
 
@@ -146,7 +139,8 @@ a:focus-visible {
 
 .caymus-points {
   max-width: 38em;
-  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 0.5rem;
 }
 
