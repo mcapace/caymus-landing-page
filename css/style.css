@@ -127,16 +127,17 @@ a:focus-visible {
   margin-right: auto;
 }
 
-/* Main title: sized so line length matches tagline below */
+/* Main title: one line, same line length as tagline below */
 .caymus-title {
   font-family: 'abril-titling', Georgia, serif;
-  font-size: clamp(2.2rem, 5.2vw, 3.4rem);
+  font-size: clamp(1.75rem, 3.9vw, 2.4rem);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.03em;
   color: #f8f4ed;
   margin: 0 0 0.6rem;
   line-height: 1.15;
+  white-space: nowrap;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35), 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
@@ -246,6 +247,9 @@ a:focus-visible {
   .caymus-landing {
     background-position: center center;
     background-size: cover;
+  }
+  .caymus-title {
+    white-space: normal;
   }
 }
 
