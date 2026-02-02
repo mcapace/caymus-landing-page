@@ -217,14 +217,14 @@ a:focus-visible {
   color: #f8f4ed;
 }
 
-/* Quotes: larger */
+/* Quotes: larger, aligned under "N" in No. */
 .caymus-point blockquote {
   font-family: 'atf-franklin-gothic', -apple-system, sans-serif;
   font-size: 1.0625rem;
   font-weight: 400;
   color: #d4a84b;
   margin: 0;
-  padding-left: 0.5em;
+  padding-left: 0;
   border: none;
   line-height: 1.55;
   font-style: normal;
