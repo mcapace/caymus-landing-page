@@ -58,22 +58,22 @@ a:focus-visible {
   }
 }
 
-/* Gradient: left + bottom center-left to match right (tone down purple) */
+/* Gradient: left + bottom — warm red like top, less purple */
 .caymus-overlay {
   position: absolute;
   inset: 0;
   background:
     linear-gradient(
       to top,
-      rgba(52, 28, 30, 0.38) 0%,
-      rgba(50, 28, 30, 0.15) 35%,
+      rgba(58, 26, 26, 0.36) 0%,
+      rgba(54, 26, 27, 0.14) 35%,
       transparent 55%
     ),
     linear-gradient(
       to right,
-      rgba(52, 28, 30, 0.52) 0%,
-      rgba(48, 28, 30, 0.35) 22%,
-      rgba(46, 30, 32, 0.15) 42%,
+      rgba(58, 26, 26, 0.5) 0%,
+      rgba(54, 26, 27, 0.33) 22%,
+      rgba(50, 27, 28, 0.14) 42%,
       transparent 62%
     );
   z-index: 0;
