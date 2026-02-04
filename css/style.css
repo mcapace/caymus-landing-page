@@ -132,7 +132,6 @@ a:focus-visible {
   font-family: 'abril-titling', Georgia, serif;
   font-size: clamp(2.1rem, 4.7vw, 2.95rem);
   font-weight: 700;
-  text-transform: uppercase;
   letter-spacing: 0.04em;
   color: #f8f4ed;
   margin: 0 0 0.6rem;
