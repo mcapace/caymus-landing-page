@@ -140,7 +140,7 @@ a:focus-visible {
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35), 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-/* Subtitle: one line, centered with logo */
+/* Subtitle: wraps when needed so long copy isn’t clipped (parent uses overflow: hidden) */
 .caymus-tagline {
   font-family: 'atf-franklin-gothic', -apple-system, sans-serif;
   font-size: 1.125rem;
@@ -148,7 +148,9 @@ a:focus-visible {
   color: #f5f0e6;
   margin: 0;
   line-height: 1.5;
-  white-space: nowrap;
+  white-space: normal;
+  max-width: 100%;
+  text-wrap: balance;
 }
 
 .caymus-points {
@@ -248,8 +250,7 @@ a:focus-visible {
     background-position: center center;
     background-size: cover;
   }
-  .caymus-title,
-  .caymus-tagline {
+  .caymus-title {
     white-space: normal;
   }
 }
